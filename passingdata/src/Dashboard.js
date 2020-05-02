@@ -14,8 +14,8 @@ class Dashboard extends Component {
       <MovieCard
         key={id}
         users={users}
-        usersWhoLikedMovie={usersByMovie[id]}
-        movieInfo={movies[id]}
+        usersWhoLikedMovie={usersByMovie[id]} // each value of the property (array) in usersByMovie object => ["1", "2"]
+        movieInfo={movies[id]} // each object value in movies object => { id: 1,  name: "Planet Earth"}
       />
     ));
 
